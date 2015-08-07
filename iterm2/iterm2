@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+###################################
+#  Parlay configuration utility   #
+##########################################################
+#                                                        #
+# Objective:                                             #
+# Hack iTerm2 for preferences, settings, and productivity#
+#                                                        #
+# Learn:                                                 #
+# See documentation on DEFAULTS(1):                      #
+# https://goo.gl/67dQaa                                  #
+#                                                        #
+##########################################################
+
+##########################
+#    Key Mappings        #
+##########################
+
+# Navigation Shortcuts
+# Set tab switching
+
+# Set window switching
+
+# Set scrollback to unlimited
+
+

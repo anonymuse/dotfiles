@@ -1,0 +1,75 @@
+#!/bin/sh
+#
+###################################
+#  Parlay configuration utility   #
+##########################################################
+#                                                        #
+# Objective:                                             #
+# Hack OSX for preferences, settings, and productivity.  #
+#                                                        #            
+# Learn:                                                 #
+# See documentation on DEFAULTS(1):                      #
+# https://goo.gl/67dQaa                                  #
+#                                                        #
+##########################################################
+
+# Set sudo for the duration of the script 
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Switch caps lock and command
+# Placeholder
+
+##########################
+#    Mouse / Keyboard    #
+##########################
+# Enable tap to click on the Trackpad for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobaDomain com.apple.mouse.tapBehavior -int 1
+
+# Set trackpad scroll direction to classic (flight sim style!)
+defaults write -g com.apple.swipescrolldirection -bool false
+
+# Set Mission Control access to four fingers
+# Placeholder
+
+# Enable three finger drag
+# Placeholder
+
+# Tracking speed to 'faster'
+# Placeholder
+
+# Set caps lock key to control
+# Placeholder
+
+# Set control key to caps lock
+# Placeholder
+
+# Adjust keyboard brightness in low light
+# Placeholder
+
+# Turn off keyboard lights 'faster'
+# Placeholder
+
+# Set key repeat to 'fastest'
+# Placeholder
+
+# Set delay until key repeat to 'shortest'
+# Placeholder
+
+##########################
+#         Dock           #
+##########################
+
+# Set Dock to auto-hide
+# Placeholder
+
+# Set Dock size to small
+# Placeholder
+
+# Set Dock position to left
+# Placeholder
+
+# Minimize applications into application icon
+# Placeholder
