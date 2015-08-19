@@ -48,8 +48,18 @@ else
     echo "skipped brew package upgrades.";
 fi
 
-echo "Installing baseline applications"
+echo "Installing baseline CLI applications"
+brew instal tmux
+
+echo "Installing baseline GUI applications"
 brew cask install iterm2
 brew cask install google-chrome
+brew cask install sonos
+brew cask install spectacle
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install skype
+brew cask install unrarx
 
 exit 0
