@@ -5,11 +5,12 @@
 # Objective:                                             #
 # Hack Tmux for preferences, settings, and productivity  #
 #                                                        #
-# Learn:                                                 #
-#                                                        #
 #                                                        #
 #                                                        #
 ##########################################################
+
+# Ensure 256 colors are enabled
+set -g default-terminal "screen-256color"
 
 # Set default key
 set -g prefix C-a
@@ -32,4 +33,15 @@ set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 set -g status-keys vi
 
 # Use vi keybindings for window navigation
-set-window-option -g mode-keys vi
+setw -g mode-keys vi
+
+# Setup 'v' to begin selection as in Vim
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
+# Update default binding of `Enter` to also use copy-pipe
+#unbind -t vi-copy Enter
+#bind-key -t vi-copy Enter copy-pipe
+
+# Set the status bar
+setw -g status-left #H:#S at #W:#T

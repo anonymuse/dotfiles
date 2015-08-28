@@ -3,8 +3,6 @@
 # Homebrew installation script and some of the common dependencies.
 
 # Check for Homebrew
-if test ! $(which brew)
-then
   echo "  Installing Homebrew."
 
   # Install the correct homebrew for each OS type
@@ -49,7 +47,13 @@ else
 fi
 
 echo "Installing baseline CLI applications"
+brew instal python
 brew instal tmux
+brew install docker
+brew install boot2docker
+brew install docker-machine
+brew install docker-compose
+brew install docker-swarm
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
@@ -61,5 +65,7 @@ brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install skype
 brew cask install unrarx
+brew cask install nmap
+brew cask install firefox
 
 exit 0
