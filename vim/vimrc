@@ -1,3 +1,7 @@
+" Set up pathogen
+" execute pathogen#infect()
+" filetype plugin indent on
+
 " Use Vim settings, not Vi
 set nocompatible
 
