@@ -67,5 +67,9 @@ brew cask install skype
 brew cask install unrarx
 brew cask install nmap
 brew cask install firefox
+brew cask install evernote
+brew cask install sublime-text
+brew cask install deluge
+brew cask install otto
 
 exit 0
