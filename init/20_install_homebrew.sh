@@ -48,6 +48,7 @@ fi
 
 echo "Installing baseline CLI applications"
 brew instal python
+brew instal awscli
 brew instal tmux
 brew install docker
 brew install boot2docker
