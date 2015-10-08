@@ -55,6 +55,7 @@ brew install boot2docker
 brew install docker-machine
 brew install docker-compose
 brew install docker-swarm
+brew install mackup
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
@@ -72,5 +73,7 @@ brew cask install evernote
 brew cask install sublime-text
 brew cask install deluge
 brew cask install otto
+brew cask install caffeine
+
 
 exit 0
