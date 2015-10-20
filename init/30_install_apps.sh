@@ -5,7 +5,7 @@
 ##########################################################
 #                                                        #
 # Objective:                                             #
-# Install Homebrew for OSX package management.           #
+# Install programs via Homebrew for OSX                  #
 #                                                        #
 # Learn:                                                 #
 # See documentation on DEFAULTS(1):                      #
@@ -50,11 +50,42 @@ is_osx || return 1
 # Hack to show the first-run brew-cask password prompt immediately.
 brew cask info this-is-somewhat-annoying 2>/dev/null
 
+# Install baseline applications
+read -r -p "Would you like to run brew upgrade? [y|N] " response
+if [[ $response =~ ^(y|yes|Y) ]];then
+    # Upgrade any already-installed formulae
+    echo "upgrade brew packages..."
+    brew upgrade
+    echo "brews updated..."
+else
+    echo "skipped brew package upgrades.";
+fi.
 
-# Install Homebrew Casks
-  # Applications
+echo "Installing baseline CLI applications"
+brew instal python
+brew instal awscli
+brew instal tmux
+brew install docker
+brew install boot2docker
+brew install docker-machine
+brew install docker-compose
+brew install docker-swarm
+brew install mackup
 
-brew cask install virualbox
-brew cask install boot2docker
-brew cask install docker
+echo "Installing baseline GUI applications"
+brew cask install iterm2
+brew cask install google-chrome
+brew cask install sonos
 brew cask install spectacle
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install skype
+brew cask install unrarx
+brew cask install nmap
+brew cask install firefox
+brew cask install evernote
+brew cask install sublime-text
+brew cask install deluge
+brew cask install otto
+brew cask install caffeine
