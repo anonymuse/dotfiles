@@ -89,3 +89,4 @@ brew cask install sublime-text
 brew cask install deluge
 brew cask install otto
 brew cask install caffeine
+brew cask install flux
