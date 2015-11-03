@@ -71,6 +71,9 @@ brew install docker-machine
 brew install docker-compose
 brew install docker-swarm
 brew install mackup
+brew install virtualenvwrapper
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
@@ -90,3 +93,7 @@ brew cask install deluge
 brew cask install otto
 brew cask install caffeine
 brew cask install flux
+
+echo "Installing pip-based applications"
+pip install distribute
+pip install nose
