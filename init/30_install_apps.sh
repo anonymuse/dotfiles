@@ -93,7 +93,11 @@ brew cask install deluge
 brew cask install otto
 brew cask install caffeine
 brew cask install flux
+brew cask install transmission
+brew cask install the-unarchiver
+brew cask install dash
 
 echo "Installing pip-based applications"
 pip install distribute
 pip install nose
+pip install requests
