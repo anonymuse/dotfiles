@@ -66,7 +66,6 @@ brew instal python
 brew instal awscli
 brew instal tmux
 brew install docker
-brew install boot2docker
 brew install docker-machine
 brew install docker-compose
 brew install docker-swarm
@@ -96,8 +95,10 @@ brew cask install flux
 brew cask install transmission
 brew cask install the-unarchiver
 brew cask install dash
+brew cask install endlesssky
 
 echo "Installing pip-based applications"
 pip install distribute
 pip install nose
 pip install requests
+pip install flask
