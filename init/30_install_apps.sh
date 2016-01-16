@@ -73,6 +73,7 @@ brew install mackup
 brew install virtualenvwrapper
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
+brew install hugo
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
@@ -102,3 +103,5 @@ pip install distribute
 pip install nose
 pip install requests
 pip install flask
+pip install virtualenv
+pip install virtualenvwrapper
