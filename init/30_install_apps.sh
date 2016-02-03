@@ -105,3 +105,4 @@ pip install requests
 pip install flask
 pip install virtualenv
 pip install virtualenvwrapper
+pip install SimpleGUICS2Pygame
