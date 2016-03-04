@@ -5,23 +5,27 @@
 # Objective:                                             #
 # Hack Tmux for preferences, settings, and productivity  #
 #                                                        #
+# Learn:                                                 #
+#                                                        #
 #                                                        #
 #                                                        #
 ##########################################################
 
-# Ensure 256 colors are enabled
-set -g default-terminal "screen-256color"
-
-# Set default key
+# Set default key to 'a'
 set -g prefix C-a
 unbind-key C-b
 bind-key C-a send-prefix
 
 # Mouse Configuration
-set -g mode-mouse on
-set -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-select-window on
+# set -g mode-mouse on
+# set -g mouse-select-pane on
+# set -g mouse-resize-pane on
+# set -g mouse-select-window on
+# These options appear to be deprecated in favor of:
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+
 
 # Use the system clipboard
 # set-option -g default-command "reattach-to-user-namespace -l bash"
@@ -32,16 +36,5 @@ set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 # Use vi keybindings for tmux commandline input
 set -g status-keys vi
 
-# Use vi keybindings for window navigation
-setw -g mode-keys vi
-
-# Setup 'v' to begin selection as in Vim
-bind-key -t vi-copy 'v' begin-selection
-bind-key -t vi-copy 'y' copy-selection
-
-# Update default binding of `Enter` to also use copy-pipe
-#unbind -t vi-copy Enter
-#bind-key -t vi-copy Enter copy-pipe
-
-# Set the status bar
-setw -g status-left #H:#S at #W:#T
+# Us vi keybindings for window navigation
+set-window-option -g mode-keys vi
