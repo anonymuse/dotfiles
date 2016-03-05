@@ -1,0 +1,15 @@
+DOCKER_MACHINE="development"
+
+# Set up virtualenv
+if
+  [ ! -d ~/.virtualenvs ]
+then
+  mkdir ~/.virtualenvs
+fi
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Check for Docker Machine
+eval "$(docker-machine env $DOCKER_MACHINE)"
+
+alias brewcheck='brew update; brew cleanup; brew cask cleanup'
