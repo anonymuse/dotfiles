@@ -74,6 +74,9 @@ brew install virtualenvwrapper
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 brew install hugo
+# Packages for pyethapp
+brew install libtool
+brew install automake
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
