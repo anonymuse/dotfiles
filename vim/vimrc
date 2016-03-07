@@ -1,11 +1,8 @@
-" Set up pathogen
-" execute pathogen#infect()
+" Use Vim settings, not Vi
+set nocompatible
 
 " Detect the type of file and appropriate indentation
 filetype plugin indent on
-
-" Use Vim settings, not Vi
-set nocompatible
 
 " Allow backspacing in insert mode
 set backspace=indent,eol,start
@@ -38,7 +35,6 @@ set incsearch
 syntax on
 set hlsearch
 
-" 2 space Softtabs
 " Show existing tab with 4 space width
 set tabstop=4
 " When indenting with '>', use 4 space width
@@ -92,3 +88,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" Set filetype markdown for all .md files
+autocmd BufNewFile,BufRead *.md set filetype=markdown
