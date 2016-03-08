@@ -7,3 +7,6 @@ set hintchars=abcdefghijklmnopqrstuvwxyz
 source! /Users/jesse/.vimperatorrc.local
 
 " vim: set ft=vimperator:
+
+" Load dynamic hints immediately
+set wildmode=autocomplete
