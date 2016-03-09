@@ -13,4 +13,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 eval "$(docker-machine env $DOCKER_MACHINE)"
 
 alias brewclean='brew update; brew cleanup; brew cask cleanup'
-alias dockdangle='docker images -qf dangling=true | xargs docker rmi'
+alias cleanimg='docker images -qf dangling=true | xargs docker rmi'
+alias cleanvol='docker volume rm $(docker volume ls -qf dangling=true)'
