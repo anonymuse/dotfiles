@@ -12,4 +12,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Check for Docker Machine
 eval "$(docker-machine env $DOCKER_MACHINE)"
 
-alias brewcheck='brew update; brew cleanup; brew cask cleanup'
+alias brewclean='brew update; brew cleanup; brew cask cleanup'
+alias dockdangle='docker images -qf dangling=true | xargs docker rmi'
