@@ -48,9 +48,14 @@ au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 " Always display the status line
 set laststatus=2
 
-" show trailing whitespace chars
-set list
-set listchars=tab:>-,trail:.,extends:#,nbsp:.
+" Highlight training whitespace characters in red
+" Don't highlight while in insert mode
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " always set autoindenting on
 set autoindent
