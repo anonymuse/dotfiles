@@ -91,3 +91,6 @@ nnoremap <c-l> <c-w>l
 
 " Set filetype markdown for all .md files
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" Prevent Vim from changing tabs to spaces in Makefiles
+autocmd FileType make setlocal noexpandtab
