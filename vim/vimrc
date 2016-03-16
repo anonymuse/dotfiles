@@ -36,7 +36,7 @@ syntax on
 set hlsearch
 
 " Show existing tab with 4 space width
-set tabstop=4
+set tabstop=2
 " When indenting with '>', use 4 space width
 set shiftwidth=4
 " When pressing tab, insert 4 spaces
