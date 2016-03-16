@@ -1,6 +1,9 @@
 " Use Vim settings, not Vi
 set nocompatible
 
+" Set Mouse to always on
+set mouse=a
+
 " Detect the type of file and appropriate indentation
 filetype plugin indent on
 

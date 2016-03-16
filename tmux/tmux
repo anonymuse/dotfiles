@@ -17,21 +17,9 @@ unbind-key C-b
 bind-key C-a send-prefix
 
 # Mouse Configuration
-# set -g mode-mouse on
-# set -g mouse-select-pane on
-# set -g mouse-resize-pane on
-# set -g mouse-select-window on
-# These options appear to be deprecated in favor of:
-set -g mouse on
+set -g -q mouse on
 bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
 bind -n WheelDownPane select-pane -t= \; send-keys -M
-
-
-# Use the system clipboard
-# set-option -g default-command "reattach-to-user-namespace -l bash"
-
-# Configure Scrolling
-set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 
 # Use vi keybindings for tmux commandline input
 set -g status-keys vi
