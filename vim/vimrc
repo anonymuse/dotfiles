@@ -102,3 +102,8 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 " Prevent Vim from changing tabs to spaces in Makefiles
 autocmd FileType make setlocal noexpandtab
+
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
