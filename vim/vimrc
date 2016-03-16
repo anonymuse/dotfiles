@@ -4,8 +4,6 @@ set nocompatible
 " Set Mouse to always on
 set mouse=a
 
-" Detect the type of file and appropriate indentation
-filetype plugin indent on
 
 " Allow backspacing in insert mode
 set backspace=indent,eol,start
@@ -20,7 +18,7 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 " Keep 5000 lines of command line history
-set history=5000
+set history=5001
 
 " Show the cursor position all the time
 set ruler
@@ -28,8 +26,6 @@ set ruler
 " Reload files
  set autoread
 
-" Display incomplete commands
-set showcmd
 
 " Do incremental searching
 set incsearch
@@ -66,10 +62,23 @@ set autoindent
 " copy the previous indentation on autoindenting
 set copyindent
 
+" --------------
+" UI Setup
+" --------------
 " Turn on line numbers
 set number
+" Display incomplete commands
+set showcmd
+" Detect the type of file and appropriate indentation
+filetype plugin indent on
+" Set visual autocomplete for command menu
+set wildmenu
+" Draw a horizontal highlight for the current line
+set cursorline
 
+" --------------
 " Search Settings
+" --------------
 set incsearch   " show search matches as you type
 set ignorecase  " case insensitive search
 set smartcase   " If a capital letter is included, make it case-sensitive
