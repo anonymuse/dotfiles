@@ -75,6 +75,7 @@ filetype plugin indent on
 set wildmenu
 " Draw a horizontal highlight for the current line
 set cursorline
+highlight CursorLine term=bold cterm=bold guibg=Grey40
 
 " --------------
 " Search Settings
