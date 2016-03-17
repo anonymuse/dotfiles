@@ -74,8 +74,13 @@ filetype plugin indent on
 " Set visual autocomplete for command menu
 set wildmenu
 " Draw a horizontal highlight for the current line
+" Highlight the current line
 set cursorline
-highlight CursorLine term=bold cterm=bold guibg=Grey40
+" Set the cursorline colors
+highlight CursorLine term=bold cterm=bold ctermbg=235
+" Remove highlight when the window loses focus
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 " --------------
 " Search Settings
