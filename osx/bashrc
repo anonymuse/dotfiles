@@ -19,3 +19,5 @@ alias dockerdns='echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias denv='eval $(docker-machine env development)'
+alias code='~/Code/my_repos'
+alias gs='git status'
