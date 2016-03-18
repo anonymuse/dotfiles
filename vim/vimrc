@@ -1,9 +1,14 @@
 " Use Vim settings, not Vi
 set nocompatible
 
-" Set Mouse to always on
-set mouse=a
-
+" General {
+  " Set background to dark
+  set background=dark
+  " Set Mouse to always on
+  set mouse=a
+  " Hide mouse cursor while typing
+  set mousehide
+" }
 
 " Allow backspacing in insert mode
 set backspace=indent,eol,start
@@ -35,11 +40,13 @@ syntax on
 set hlsearch
 
 " Show existing tab with 4 space width
-set tabstop=2
+set tabstop=4
 " When indenting with '>', use 4 space width
 set shiftwidth=4
 " When pressing tab, insert 4 spaces
 set expandtab
+" Let backspace delete indent
+set softtabstop=4
 
 " Highlight the background past 80 characters
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
