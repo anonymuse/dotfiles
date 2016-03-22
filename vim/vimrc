@@ -13,14 +13,13 @@ set nocompatible
 " Allow backspacing in insert mode
 set backspace=indent,eol,start
 
-" --------------
-" Backup settings
-" --------------
+" Backup settings {
 " Store backups in a central location
 " Using trailing double slashes enables a feature to avoid name collisions
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+" }
 
 " Keep 5000 lines of command line history
 set history=5001
@@ -125,7 +124,18 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 " Prevent Vim from changing tabs to spaces in Makefiles
 autocmd FileType make setlocal noexpandtab
 
+" Key Mappings {
 
-" Keep search matches in the middle of the window.
-nnoremap n nzzzv
-nnoremap N Nzzzv
+    " Change the default leader key from '\', to ',', as it is in a standard
+    " location.
+    set mapleader=","
+
+    " Keep search matches in the middle of the window.
+    nnoremap n nzzzv
+    nnoremap N Nzzzv
+
+    " Write to file as sudo
+    " Takes advantage of remapping the key only in command line mode
+    cmap <Leader>W :w !sudo tee % > /dev/null
+
+" }
