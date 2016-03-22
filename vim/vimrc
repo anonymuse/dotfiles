@@ -128,7 +128,7 @@ autocmd FileType make setlocal noexpandtab
 
     " Change the default leader key from '\', to ',', as it is in a standard
     " location.
-    set mapleader=","
+    let mapleader=","
 
     " Keep search matches in the middle of the window.
     nnoremap n nzzzv
@@ -136,6 +136,6 @@ autocmd FileType make setlocal noexpandtab
 
     " Write to file as sudo
     " Takes advantage of remapping the key only in command line mode
-    cmap <Leader>W :w !sudo tee % > /dev/null
+    nnoremap <Leader>W :w !sudo tee % > /dev/null
 
 " }
