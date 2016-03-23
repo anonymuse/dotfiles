@@ -9,6 +9,11 @@ fi
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# Set up the Terminal for 256 colors
+# Gets Vim workinger for some reason with highlighting
+# May be unnecessary with coolor schemes installed
+export TERM=screen-256color
+
 # Check for Docker Machine
 eval "$(docker-machine env $DOCKER_MACHINE)"
 
