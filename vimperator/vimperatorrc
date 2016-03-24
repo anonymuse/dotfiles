@@ -1,6 +1,6 @@
 "3.10.1 (created: 2015/08/25 00:41:59)
 
-highlight Hint font-size:135%;color:white;background-color:red;padding:2px;
+highlight Hint font-size:120%;color:white;background-color:red;padding:2px;
 noremap j 3j
 noremap k 3k
 set hintchars=abcdefghijklmnopqrstuvwxyz
