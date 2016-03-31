@@ -84,9 +84,6 @@ set wildmenu
 set cursorline
 " Set the cursorline colors
 highlight CursorLine term=bold cterm=bold ctermbg=235
-" Remove highlight when the window loses focus
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
 
 " --------------
 " Search Settings
