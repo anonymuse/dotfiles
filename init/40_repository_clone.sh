@@ -19,3 +19,4 @@ function e_success()  { echo -e " \033[1;32m✔\033[0m  $@"; }
 
 # Clone repositories
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/pallets/flask.git
