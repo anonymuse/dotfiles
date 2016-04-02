@@ -1,6 +1,26 @@
 " Use Vim settings, not Vi
 set nocompatible
 
+" Vundle Config {
+    " turn filetype off for Vundle
+    filetype off
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    " alternatively, pass a path where Vundle should install plugins
+    "call vundle#begin('~/some/path/here')
+    " All of your Plugins must be added before the following line
+    call vundle#end()
+" }
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" File types {
+    " Detect the type of file and appropriate indentation
+    filetype plugin indent on
+" }
+
 " General {
   " Set background to dark
   set background=dark
@@ -8,6 +28,9 @@ set nocompatible
   set mouse=a
   " Hide mouse cursor while typing
   set mousehide
+" }
+
+" Color {
 " }
 
 " Allow backspacing in insert mode
@@ -75,8 +98,6 @@ set copyindent
 set number
 " Display incomplete commands
 set showcmd
-" Detect the type of file and appropriate indentation
-filetype plugin indent on
 " Set visual autocomplete for command menu
 set wildmenu
 " Draw a horizontal highlight for the current line
