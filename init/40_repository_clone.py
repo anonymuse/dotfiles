@@ -26,6 +26,10 @@ pub_repos = '/Users/jesse/Code/public_repos'
 #git clone https://github.com/pallets/flask.git
 
 # Do I want to put the full path of the repo here, or just the name? Not sure
+dotfile_clones = [
+        'https://github.com/gmarik/dotfiles.git',
+        ]
+
 clones = [
         'https://github.com/pallets/flask.git',
         'https://github.com/cptactionhank/docker-atlassian-confluence.git',
