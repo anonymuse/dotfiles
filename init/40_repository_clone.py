@@ -37,6 +37,7 @@ clones = [
         'https://github.com/braydie/HowToBeAProgrammer.git',
         'https://github.com/mizzy/serverspec.git',
         'https://github.com/behave/behave.git',
+        'https://github.com/mizzy/serverspec.git',
         ]
 
 # Clone my repositories
