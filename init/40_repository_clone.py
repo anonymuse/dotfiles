@@ -29,6 +29,7 @@ pub_repos = '/Users/jesse/Code/public_repos'
 dotfile_clones = [
         'https://github.com/gmarik/dotfiles.git',
         'https://github.com/marcusandre/dotfiles.git'
+        'https://github.com/skwp/dotfiles.git'
         ]
 
 clones = [
