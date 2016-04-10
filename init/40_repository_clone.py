@@ -41,7 +41,8 @@ clones = [
         'https://github.com/behave/behave.git',
         'https://github.com/mizzy/serverspec.git',
         'https://github.com/rothgar/awesome-tmux.git',
-        'https://github.com/jnicklas/capybara.git'
+        'https://github.com/jnicklas/capybara.git',
+        'https://github.com/tendermint/tendermint.git'
         ]
 
 # Clone my repositories
