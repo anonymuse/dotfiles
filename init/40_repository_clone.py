@@ -43,6 +43,7 @@ clones = [
         'https://github.com/rothgar/awesome-tmux.git',
         'https://github.com/jnicklas/capybara.git',
         'https://github.com/tendermint/tendermint.git'
+        'https://github.com/konradkonrad/docker-pyeth-cluster.git'
         ]
 
 # Clone my repositories
