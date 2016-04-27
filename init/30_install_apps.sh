@@ -75,6 +75,7 @@ brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 brew install hugo
 brew install keybase
+brew install npm
 # Packages for pyethapp
 brew install libtool
 brew install automake
