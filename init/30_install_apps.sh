@@ -78,6 +78,9 @@ brew install keybase
 # Packages for pyethapp
 brew install libtool
 brew install automake
+# Packages for Geth
+brew tap ethereum/ethereum
+brew install ethereum
 
 echo "Installing baseline GUI applications"
 brew cask install iterm2
