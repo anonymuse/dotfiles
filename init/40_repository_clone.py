@@ -26,13 +26,18 @@ pub_repos = '/Users/jesse/Code/public_repos'
 #git clone https://github.com/pallets/flask.git
 
 # Do I want to put the full path of the repo here, or just the name? Not sure
-dotfile_clones = [
+clone_dotfiles = [
         'https://github.com/gmarik/dotfiles.git',
-        'https://github.com/marcusandre/dotfiles.git'
+        'https://github.com/marcusandre/dotfiles.git',
         'https://github.com/skwp/dotfiles.git'
         ]
 
-clones = [
+clone_ethereum = [
+        'https://github.com/eshon/conference.git',
+        'https://github.com/konradkonrad/docker-pyeth-cluster.git'
+        ]
+
+clone_general = [
         'https://github.com/pallets/flask.git',
         'https://github.com/cptactionhank/docker-atlassian-confluence.git',
         'https://github.com/spf13/hugoThemes.git',
@@ -42,8 +47,8 @@ clones = [
         'https://github.com/mizzy/serverspec.git',
         'https://github.com/rothgar/awesome-tmux.git',
         'https://github.com/jnicklas/capybara.git',
-        'https://github.com/tendermint/tendermint.git'
-        'https://github.com/konradkonrad/docker-pyeth-cluster.git'
+        'https://github.com/tendermint/tendermint.git',
+        'https://github.com/eshon/conference.git'
         ]
 
 # Clone my repositories
