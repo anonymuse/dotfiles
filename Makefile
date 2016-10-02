@@ -7,3 +7,5 @@ update_vim:
 update_vimp:
 	cp vimperator/vimperatorrc ~/.vimperatorrc
 
+update_bashrc
+    cp osx/bashrc ~/.bashrc
