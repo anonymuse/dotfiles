@@ -1,4 +1,4 @@
-DOCKER_MACHINE="development"
+DOCKER_MACHINE="default"
 
 # Set up virtualenv
 if
@@ -20,10 +20,12 @@ eval "$(docker-machine env $DOCKER_MACHINE)"
 alias brewclean='brew update; brew cleanup; brew cask cleanup'
 alias cleanimg='docker images -qf dangling=true | xargs docker rmi'
 alias cleanvol='docker volume ls -qf dangling=true | xargs docker volume rm'
+alias cleancon='docker ps -qa -f exited=0 | xargs docker rm'
 alias dockerdns='echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.d/docker restart'
+alias dmachine='unset ${!DOCKER_*}'
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias denv='eval $(docker-machine env development)'
-alias code='~/Code/my_repos'
+alias code='cd ~/Code/my_repos'
 alias gs='git status'
 alias eth='pyethapp'
