@@ -77,6 +77,7 @@ brew install hugo
 brew install keybase
 brew install npm
 brew install irssi
+brew install tree
 # Packages for pyethapp
 brew install libtool
 brew install automake
