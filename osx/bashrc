@@ -1,5 +1,3 @@
-DOCKER_MACHINE="default"
-
 # Set up virtualenv
 if
   [ ! -d ~/.virtualenvs ]
@@ -13,9 +11,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Gets Vim workinger for some reason with highlighting
 # May be unnecessary with coolor schemes installed
 export TERM=screen-256color
-
-# Check for Docker Machine
-eval "$(docker-machine env $DOCKER_MACHINE)"
 
 alias brewclean='brew update; brew cleanup; brew cask cleanup'
 alias cleanimg='docker images -qf dangling=true | xargs docker rmi'
