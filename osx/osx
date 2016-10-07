@@ -6,14 +6,14 @@
 #                                                        #
 # Objective:                                             #
 # Hack OSX for preferences, settings, and productivity.  #
-#                                                        #            
+#                                                        #
 # Learn:                                                 #
 # See documentation on DEFAULTS(1):                      #
 # https://goo.gl/67dQaa                                  #
 #                                                        #
 ##########################################################
 
-# Set sudo for the duration of the script 
+# Set sudo for the duration of the script
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
