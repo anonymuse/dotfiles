@@ -1,3 +1,4 @@
+# Makefile for updating dotfiles and related
 
 all: update_local
 
