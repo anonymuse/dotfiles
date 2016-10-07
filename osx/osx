@@ -21,8 +21,20 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Placeholder
 
 ##########################
+#    General UX/UI       #
+##########################
+
+# Disable Notification Center and remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+##########################
 #    Mouse / Keyboard    #
 ##########################
+
+# Enable full keyboard access for all controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 # Enable tap to click on the Trackpad for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -61,6 +73,17 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Set delay until key repeat to 'shortest'
 # Placeholder
+
+##########################
+#        Screen         #
+##########################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Documents/personal/screenshots/"
 
 ##########################
 #         Dock           #
