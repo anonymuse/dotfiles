@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
+# As there's no generalized update script for Brew, this script is designed to
+# poll your Brew casks and updatee them as necessary.
 
-# Update brew, brew cask and clean up
+# Update Brew, Brew cask and clean up
 (set -x; brew update;)
 (set -x; brew cleanup;)
 (set -x; brew cask cleanup;)
@@ -20,7 +22,7 @@ do
     installed=$(find "/usr/local/Caskroom/$cask" -type d -maxdepth 1 -maxdepth 1 -name "$version")
 
     if [[ -z $installed ]]; then
-        # Install a new version, and remove old versions
+        # Install new versions, and remove old versions
         echo "${red}${cask}${reset} requires ${red}update${reset}."
         (set -x; brew cask uninstall $cask --force;)
         (set -x; brew cask install $cask --force;)
