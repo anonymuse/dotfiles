@@ -1,3 +1,4 @@
+
 # Set up virtualenv
 if
   [ ! -d ~/.virtualenvs ]
@@ -6,6 +7,9 @@ then
 fi
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Set up fabric8
+export PATH=$PATH:~/.fabric8/bin
 
 # Set up the Terminal for 256 colors
 # Gets Vim workinger for some reason with highlighting
