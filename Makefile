@@ -5,6 +5,7 @@ NO_COLOR = \033[0m
 
 
 all: vim vimp taskwarrior bashrc
+.PHONY: vim vimp taskwarrior bashrc
 
 vim:
 	cp vim/vimrc ~/.vimrc
