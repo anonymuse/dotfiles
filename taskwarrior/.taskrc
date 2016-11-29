@@ -10,6 +10,11 @@
 
 # Use the command 'task show' to see all defaults and overrides
 
+# Project Defaults
+default.project=personal
+default.command=list
+default.priority=M
+
 # Files
 data.location=~/.task
 
