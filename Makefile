@@ -1,15 +1,16 @@
 # Makefile for updating dotfiles and related
 
-all: update_local
+all: vim vimp taskwarrior bashrc
 
-update_vim:
+vim:
 	cp vim/vimrc ~/.vimrc
 
-update_vimp:
+vimp:
 	cp vimperator/vimperatorrc ~/.vimperatorrc
 
-update_taskwarrior:
+taskwarrior:
 	cp taskwarrior/taskrc ~/.taskrc
 
-update_bashrc
-    cp osx/bashrc ~/.bashrc
+bashrc:
+	cp osx/bashrc ~/.bashrc
+
