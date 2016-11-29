@@ -8,5 +8,8 @@ update_vim:
 update_vimp:
 	cp vimperator/vimperatorrc ~/.vimperatorrc
 
+update_taskwarrior:
+	cp taskwarrior/taskrc ~/.taskrc
+
 update_bashrc
     cp osx/bashrc ~/.bashrc
