@@ -16,6 +16,9 @@ export PATH=$PATH:~/.fabric8/bin
 # May be unnecessary with coolor schemes installed
 export TERM=screen-256color
 
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+
 alias brewclean='brew update; brew cleanup; brew cask cleanup'
 alias cleanimg='docker images -qf dangling=true | xargs docker rmi'
 alias cleanvol='docker volume ls -qf dangling=true | xargs docker volume rm'
