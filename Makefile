@@ -31,3 +31,7 @@ help:
 	@echo "	$(COLOR)make vimp$(NO_COLOR)	>> Copy Vimperator config"
 	@echo "----------------------------------------"
 	@echo
+	@echo "Install bashrc configuration:"
+	@echo "	$(COLOR)make bashrc$(NO_COLOR)	>> Copy bashrc config"
+	@echo "----------------------------------------"
+	@echo
