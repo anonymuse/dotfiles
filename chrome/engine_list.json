@@ -6,7 +6,10 @@
           "URL": "https://www.google.com/maps/search/%s" },
         { "name": "Google Images",
           "keyword": "images.google.com",
-          "URL": "http://images.google.com/images?hl=en&source=hp&q=%s&btnG=Search+Images&gbv=2" }
+          "URL": "http://images.google.com/images?hl=en&source=hp&q=%s&btnG=Search+Images&gbv=2" },
+        { "name": "Google Drive",
+          "keyword": "drive.google.com",
+          "URL": "https://drive.google.com/drive/search?q=%s"
       ]
     }
 }
