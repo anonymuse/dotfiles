@@ -1,15 +1,12 @@
 { "engine_list": {
-    "default_search_engines": "chrome://settings/searchengines"
+    "default_search_engines": "chrome://settings/searchengines",
       "entries": [
-        {
-          "name": "Google Maps",
+        { "name": "Google Maps",
           "keyword": "maps.google.com",
-          "URL": "https://www.google.com/maps/search/%s"
-        },
-        {
-          "name": "Google Images",
+          "URL": "https://www.google.com/maps/search/%s" },
+        { "name": "Google Images",
           "keyword": "images.google.com",
-          "URL": "http://images.google.com/images?hl=en&source=hp&q=%s&btnG=Search+Images&gbv=2"
-        }
+          "URL": "http://images.google.com/images?hl=en&source=hp&q=%s&btnG=Search+Images&gbv=2" }
+      ]
     }
 }
