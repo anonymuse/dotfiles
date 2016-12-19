@@ -1,4 +1,9 @@
 { "engine_list": {
-  "default_search_engines": "chrome://settings/searchengines"
-  }
+    "default_search_engines": "chrome://settings/searchengines"
+      "entries": [
+        {
+          "name": "Google Maps",
+          "keyword": "maps.google.com",
+          "URL": "https://www.google.com/maps/search/%s"
+        }
 }
