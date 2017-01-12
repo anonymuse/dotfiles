@@ -31,7 +31,13 @@ alias denv='eval $(docker-machine env development)'
 alias code='cd ~/Code/my_repos'
 alias gs='git status'
 alias eth='pyethapp'
-alias fixaud='sudo killall coreaudiod'
 alias killdoc='sudo pkill docker'
 alias mk='minikube'
 alias k8='kubectl'
+
+# Audio
+# If the below 'fixaud' command doesn't work, you can reload the drivers with:
+# 'sudo kextload /System/Library/Extensions/AppleHDA.kext
+# 'sudo kextload /System/Library/Extensions/AppleHDA.kext'
+# TODO: Move the driver reload to a command if necessary
+alias fixaud='sudo killall coreaudiod'
