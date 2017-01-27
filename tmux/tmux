@@ -7,7 +7,7 @@
 #                                                        #
 # Notes:                                                 #
 # This file needs to be created by the user, and resides #
-# in ~/.tmux_conf.                                       #
+# in ~/.tmux.conf.                                       #
 #                                                        #
 #                                                        #
 ##########################################################
