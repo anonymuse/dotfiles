@@ -5,8 +5,9 @@
 # Objective:                                             #
 # Hack Tmux for preferences, settings, and productivity  #
 #                                                        #
-# Learn:                                                 #
-#                                                        #
+# Notes:                                                 #
+# This file needs to be created by the user, and resides #
+# in ~/.tmux_conf.                                       #
 #                                                        #
 #                                                        #
 ##########################################################
