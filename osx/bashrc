@@ -34,6 +34,7 @@ alias eth='pyethapp'
 alias killdoc='sudo pkill docker'
 alias mk='minikube'
 alias k8='kubectl'
+alias edit='subl'
 
 # Audio
 # If the below 'fixaud' command doesn't work, you can reload the drivers with:
