@@ -35,6 +35,11 @@ alias killdoc='sudo pkill docker'
 alias mk='minikube'
 alias k8='kubectl'
 alias edit='subl'
+alias btreset='sudo kextunload -b \
+  com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport && \
+  sudo kextload -b \
+  com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport'
+
 
 # Audio
 # If the below 'fixaud' command doesn't work, you can reload the drivers with:
