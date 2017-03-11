@@ -39,6 +39,8 @@ alias btreset='sudo kextunload -b \
   com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport && \
   sudo kextload -b \
   com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport'
+alias dockviz='docker run -it -d -p 8080:8080 -v \
+  /var/run/docker.sock:/var/run/docker.sock manomarks/visualizer'
 
 
 # Audio
