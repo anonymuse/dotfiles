@@ -44,3 +44,6 @@ sudo systemctl enable docker
 # Set up sudo-less Docker
 sudo usermod -aG docker $(whoami)
 
+
+# Install touchpad utilities
+sudo apt install -y xserver-xorg-input-libinput
