@@ -62,6 +62,7 @@ else
 fi.
 
 echo "Installing baseline CLI applications"
+# General System Packages
 brew instal python
 brew instal awscli
 brew instal tmux
@@ -73,9 +74,12 @@ brew install hugo
 brew install keybase
 brew install npm
 brew install tree
+brew install htop
+
 # Packages for pyethapp
 brew install libtool
 brew install automake
+
 # Packages for Geth
 brew tap ethereum/ethereum
 brew install ethereum
