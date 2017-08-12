@@ -64,5 +64,14 @@ sudo usermod -aG docker $(whoami)
 ######################################
 # Install Touchpad Utilities         #
 ######################################
+
 # See https://github.com/advancingu/XPS13Linux/issues/3
 sudo apt install -y xserver-xorg-input-libinput
+
+###############################################
+##            System Utilities               ##
+###############################################
+
+# Allows you to collect informationn about your hardware and software outputs
+# in your system.
+sudo apt install inxi
