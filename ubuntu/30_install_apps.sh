@@ -73,3 +73,9 @@ sudo apt install -y xserver-xorg-input-libinput
 # in your system.
 sudo apt install inxi
 
+###############################################
+##            Web Browsing                   ##
+###############################################
+
+# Install Chromium
+sudo apt install chromium-browser
