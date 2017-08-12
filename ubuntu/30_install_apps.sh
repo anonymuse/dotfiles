@@ -7,13 +7,13 @@
 ###############################################
 
 ######################################
-# Install ViM                        #
+# ViM                                #
 ######################################
 
 sudo apt install vim
 
 ######################################
-# Install Sublime Text 3             #
+# Sublime Text 3                     #
 ######################################
 
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
@@ -25,7 +25,7 @@ sudo apt-get install sublime-text-installer
 ###############################################
 
 ######################################
-# Install Docker                     #
+# Docker                             #
 ######################################
 
 # Allow apt to use repositories over HTTPS
@@ -61,10 +61,7 @@ sudo usermod -aG docker $(whoami)
 ##                  Input                    ##
 ###############################################
 
-######################################
-# Install Touchpad Utilities         #
-######################################
-
+# Touchpad
 # See https://github.com/advancingu/XPS13Linux/issues/3
 sudo apt install -y xserver-xorg-input-libinput
 
@@ -75,3 +72,4 @@ sudo apt install -y xserver-xorg-input-libinput
 # Allows you to collect informationn about your hardware and software outputs
 # in your system.
 sudo apt install inxi
+
