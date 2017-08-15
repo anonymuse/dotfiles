@@ -22,3 +22,14 @@ if [ -d "$HOME/bin" ] ; then
 fi
 export GOPATH=$HOME/Code/personal/gocode
 export PATH=$PATH:/usr/local/go/bin
+
+# Set up Aliases
+alias brewclean='brew update; brew cleanup; brew cask cleanup'
+alias dockerdns='echo "nameserver 8.8.8.8" > /etc/resolv.conf && sudo /etc/init.d/docker restart'
+alias dmachine='unset ${!DOCKER_*}'
+alias dc='docker-compose'
+alias dm='docker-machine'
+alias gs='git status'
+alias mk='minikube'
+alias kct='kubectl'
+alias edit='subl'
