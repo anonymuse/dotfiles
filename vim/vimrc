@@ -149,6 +149,9 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 " Prevent Vim from changing tabs to spaces in Makefiles
 autocmd FileType make setlocal noexpandtab
 
+" Set yaml indentation to 2 spaces
+au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 " Key Mappings {
 
     " Change the default leader key from '\', to ',', as it is in a standard
