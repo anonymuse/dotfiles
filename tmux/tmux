@@ -13,7 +13,7 @@
 ##########################################################
 
 # Set default key to 'a'
-set -g prefix C-a
+set-option -g prefix C-a
 unbind-key C-b
 bind-key C-a send-prefix
 
@@ -27,3 +27,14 @@ set -g status-keys vi
 
 # Us vi keybindings for window navigation
 set-window-option -g mode-keys vi
+
+# Use ViM bindings for copying into tmux buffer
+bind P paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+bind-key -t vi-copy 'r' rectangle-toggle
+
+# Help with reloading tmux configuration
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
+bind-key M split-window -h "vim ~/.tmux.conf"
+
