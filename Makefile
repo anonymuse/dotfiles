@@ -19,6 +19,11 @@ taskwarrior:
 bashrc:
 	cp osx/bashrc ~/.bashrc
 
+trackpad:
+	sudo cp ubuntu/usr/share/X11/xorg/conf.d/90-libinput.conf \
+		/usr/share/X11/xorg/conf.d/90-libinput.conf
+
+
 help:
 	@echo "Makefile for installing dotfiles"
 	@echo "========================================"
@@ -33,5 +38,9 @@ help:
 	@echo
 	@echo "Install bashrc configuration:"
 	@echo "	$(COLOR)make bashrc$(NO_COLOR)	>> Copy bashrc config"
+	@echo "----------------------------------------"
+	@echo
+	@echo "Install Trackpad configuration:"
+	@echo "	$(COLOR)make trackpad$(NO_COLOR)	>> Copy libinput config"
 	@echo "----------------------------------------"
 	@echo
