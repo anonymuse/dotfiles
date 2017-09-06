@@ -35,6 +35,7 @@ bind-key -t vi-copy 'y' copy-selection
 bind-key -t vi-copy 'r' rectangle-toggle
 
 # Help with reloading tmux configuration
+# https://til.hashrocket.com/posts/d4d3c1fea6-quickly-edit-and-reload-tmux-configuration
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind-key M split-window -h "vim ~/.tmux.conf"
 
