@@ -79,3 +79,6 @@ sudo apt install inxi
 
 # Install Chromium
 sudo apt install chromium-browser
+
+# Install Vivaldi
+
