@@ -49,7 +49,7 @@ sudo apt update -y
 
 # Check where your package will come from and install
 apt-cache policy docker-engine
-sudo apt install docker-ce
+sudo apt install docker-ce docker-machine docker-compose
 
 # Ensure that Docker runs at startup
 sudo systemctl enable docker
