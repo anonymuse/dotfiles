@@ -61,7 +61,7 @@ sudo usermod -aG docker $(whoami)
 ##                  Input                    ##
 ###############################################
 
-# Touchpad
+# Install touchpad configuration utility
 # See https://github.com/advancingu/XPS13Linux/issues/3
 sudo apt install -y xserver-xorg-input-libinput
 
