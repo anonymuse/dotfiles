@@ -33,3 +33,4 @@ alias gs='git status'
 alias mk='minikube'
 alias kct='kubectl'
 alias edit='subl'
+alias opn="xdg-open" # opn stands for open
