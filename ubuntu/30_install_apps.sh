@@ -73,6 +73,9 @@ sudo apt install -y xserver-xorg-input-libinput
 # in your system.
 sudo apt install inxi
 
+# Screencasting and sharing software
+sudo apt install asciinema
+
 ###############################################
 ##            Web Browsing                   ##
 ###############################################
