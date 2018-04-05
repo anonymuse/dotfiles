@@ -74,6 +74,9 @@ sudo apt install inxi
 # Screencasting and sharing software
 sudo apt install asciinema
 
+# General utilities
+sudo apt install traceroute
+
 ###############################################
 ##            Web Browsing                   ##
 ###############################################
