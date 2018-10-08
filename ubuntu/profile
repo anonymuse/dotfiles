@@ -35,3 +35,4 @@ alias kct='kubectl'
 alias edit='subl'
 alias opn="xdg-open" # opn stands for open
 alias padrestart="sudo -s -- 'modprobe -r hid_multitouch; modprobe hid_multitouch'
+alias wifirestart='sudo service network-manager restart'
