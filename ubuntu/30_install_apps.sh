@@ -86,3 +86,10 @@ sudo apt install chromium-browser
 
 # Install Vivaldi
 
+###############################################
+##                 Gaming                    ##
+###############################################
+
+# Install Steam
+sudo apt install steam
+
