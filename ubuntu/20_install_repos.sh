@@ -19,6 +19,9 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 # Asciinema
 sudo apt-add-repository --yes ppa:zanchey/asciinema
 
+# Steam Client
+sudo add-appt-repository multiverse
+
 ###############################################
 ##                Update All                 ##
 ###############################################
