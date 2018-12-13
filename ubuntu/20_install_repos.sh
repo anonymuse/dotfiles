@@ -22,6 +22,9 @@ sudo apt-add-repository --yes ppa:zanchey/asciinema
 # Steam Client
 sudo add-appt-repository multiverse
 
+# Flux Client
+sudo add-apt-repository --yes ppa:nathan-renniewaldock/flux
+
 ###############################################
 ##                Update All                 ##
 ###############################################
