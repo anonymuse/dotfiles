@@ -76,6 +76,7 @@ sudo apt install asciinema
 
 # General utilities
 sudo apt install traceroute
+sudo apt-get install fluxgui
 
 ###############################################
 ##            Web Browsing                   ##
