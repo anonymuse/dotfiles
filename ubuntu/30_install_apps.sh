@@ -75,8 +75,7 @@ sudo apt install inxi
 sudo apt install asciinema
 
 # General utilities
-sudo apt install traceroute
-sudo apt-get install fluxgui
+sudo apt install -y traceroute fluxgui
 
 ###############################################
 ##            Web Browsing                   ##
