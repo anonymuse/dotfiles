@@ -75,7 +75,13 @@ sudo apt install inxi
 sudo apt install asciinema
 
 # General utilities
-sudo apt install -y traceroute fluxgui
+sudo apt install -y traceroute fluxgui ncdu
+
+###############################################
+##                  rclone                   ##
+###############################################
+
+curl https://rclone.org/install.sh | sudo bash
 
 ###############################################
 ##            Web Browsing                   ##
