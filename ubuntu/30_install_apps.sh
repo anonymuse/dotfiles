@@ -75,7 +75,10 @@ sudo apt install inxi
 sudo apt install asciinema
 
 # General utilities
-sudo apt install -y traceroute fluxgui ncdu
+sudo apt install -y fluxgui ncdu
+
+# Networking utilities
+sudo apt install -y traceroute nload iptraf
 
 ###############################################
 ##                  rclone                   ##
