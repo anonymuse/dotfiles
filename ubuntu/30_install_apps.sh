@@ -80,6 +80,12 @@ sudo apt install -y fluxgui ncdu
 # Networking utilities
 sudo apt install -y traceroute nload iptraf
 
+# NordVPN install
+# TODO: check if the repo exists first?
+# if [ ! -f /etc/sources.list.d/nordvpn.list ]
+# then 'execute some script'
+sudo apt install -y nordvpn
+
 ###############################################
 ##                  rclone                   ##
 ###############################################
