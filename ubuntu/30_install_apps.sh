@@ -87,6 +87,19 @@ sudo apt install -y traceroute nload iptraf
 sudo apt install -y nordvpn
 
 ###############################################
+##                  music                    ##
+###############################################
+
+# Musikcube
+# Install dependencies
+sudo apt-get install libev4 libmicrohttp10
+
+# Install binaries (need to download the source first)
+#TODO: add wget or curl to download the relase
+sudo dpgk -i ~/Downloads/musikcube_0.51.0_ubuntu_xenial_amd64.deb
+sudo apt-get install -f
+
+###############################################
 ##                  rclone                   ##
 ###############################################
 
