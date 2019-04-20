@@ -35,6 +35,11 @@ alias kct='kubectl'
 alias edit='subl'
 alias opn="xdg-open" # opn stands for open
 alias batt="upower --dump"
+
+# If the Network Manager icon is missing try the following
+nohup nm-applet &
+
 alias netrs="sudo systemctl restart networking.service"
+alias netmanrs="sudo systemctl restart NetworkManager.service"
 alias padrs="sudo -s 'modprobe -r hid_multitouch && modprobe hid_multitouch'"
 alias wifirs='sudo systemctl restart networking-manager.service'
