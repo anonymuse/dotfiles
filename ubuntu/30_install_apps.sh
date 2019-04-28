@@ -78,7 +78,7 @@ sudo apt install asciinema
 sudo apt install -y fluxgui ncdu
 
 # Networking utilities
-sudo apt install -y traceroute nload iptraf
+sudo apt install -y traceroute nload iptraf bmon slurm
 
 # NordVPN install
 # TODO: check if the repo exists first?
