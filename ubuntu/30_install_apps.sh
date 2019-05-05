@@ -65,6 +65,7 @@ cd /tmp
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo dpkg -i /tmp/keybase.deb
 sudo apt-get install -f
+#TODO: add 'run_keybase' here or at the end to kick off GUI install
 
 
 ###############################################
