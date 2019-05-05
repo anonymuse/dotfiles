@@ -56,6 +56,18 @@ sudo systemctl enable docker
 sudo usermod -aG docker $(whoami)
 
 ###############################################
+##                 Security                  ##
+###############################################
+
+# Get the install file and install the deb
+# NOTE: you will need to run 'run_keybase' after installation is complete
+cd /tmp
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo dpkg -i /tmp/keybase.deb
+sudo apt-get install -f
+
+
+###############################################
 ##                  Input                    ##
 ###############################################
 
