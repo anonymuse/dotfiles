@@ -88,7 +88,7 @@ sudo apt install inxi
 sudo apt install asciinema
 
 # General utilities
-sudo apt install -y fluxgui ncdu
+sudo apt install -y fluxgui ncdu conky-all
 
 # Networking utilities
 sudo apt install -y traceroute nload iptraf-ng bmon slurm
