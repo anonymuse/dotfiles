@@ -99,6 +99,10 @@ sudo apt install -y traceroute nload iptraf-ng bmon slurm
 # then 'execute some script'
 sudo apt install -y nordvpn
 
+# Syncthing
+
+sudo apt install syncthing-gtk
+
 ###############################################
 ##                  music                    ##
 ###############################################
